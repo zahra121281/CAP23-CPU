@@ -1,0 +1,380 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 45
+ VARIABLES
+ {
+  #ARCHITECTURE="IF_ID_ARC"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"ins_in\"><left=\"CPUSize - 1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"ins_out\"><left=\"CPUSize - 1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"next_pc_in\"><left=\"CPUSize - 1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"next_pc_out\"><left=\"CPUSize - 1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="IF_ID_Register"
+  #LANGUAGE="VHDL"
+  AUTHOR="ASUS"
+  COMPANY="za33"
+  CREATIONDATE="7/9/2023"
+  SOURCE="..\\src\\IF_ID_REG.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2211,1260)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library pipeline;\n"+
+"use pipeline.p_avg.all;\n"+
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.NUMERIC_STD.all;\n"+
+"use ieee.STD_LOGIC_UNSIGNED.all;\n"+
+"use ieee.MATH_REAL.UNIFORM;"
+   RECT (220,260,620,604)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_23"
+   TEXT 
+"process (clk,Flush)\n"+
+"                       begin\n"+
+"                         if (Flush = '1') then\n"+
+"                            Next_Pc_out <= (others => '0');\n"+
+"                            Ins_out <= (others => '0');\n"+
+"                         else \n"+
+"                            if (rising_edge(clk) and IF_ID_Write = '1') then\n"+
+"                               Next_PC_out <= Next_PC_IN;\n"+
+"                               Ins_out <= Ins_In;\n"+
+"                            end if;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1240,240,1641,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  24, 28, 31, 33, 37, 40, 42 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  31, 33 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1100,260)
+   VERTEXES ( (2,30) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="Flush"
+    #SYMBOL="Input"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1100,300)
+   VERTEXES ( (2,34) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="IF_ID_Write"
+    #SYMBOL="Input"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1100,420)
+   VERTEXES ( (2,36) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="Next_PC_IN(CPUSize - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1100,340)
+   VERTEXES ( (2,43) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="Ins_In(CPUSize - 1:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1100,380)
+   VERTEXES ( (2,39) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="Next_PC_out(CPUSize - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1740,260)
+   VERTEXES ( (2,27) )
+  }
+  INSTANCE  9, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #DOWNTO="1"
+    #LIBRARY="#terminals"
+    #REFERENCE="Ins_out(CPUSize - 1:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1740,300)
+   VERTEXES ( (2,25) )
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1049,260,1049,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1049,300,1049,300)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1049,420,1049,420)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1049,340,1049,340)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1049,380,1049,380)
+   ALIGN 6
+   PARENT 7
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1791,260,1791,260)
+   ALIGN 4
+   PARENT 8
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1791,300,1791,300)
+   ALIGN 4
+   PARENT 9
+  }
+  NET WIRE  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Flush"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  19, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="IF_ID_Write"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  20, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #NAME="Ins_In(CPUSize - 1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  21, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #NAME="Ins_out(CPUSize - 1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  22, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #NAME="Next_PC_IN(CPUSize - 1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  23, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #NAME="Next_PC_out(CPUSize - 1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1641,300)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (1740,300)
+  }
+  BUS  26, 0, 0
+  {
+   NET 21
+   VTX 24, 25
+  }
+  VTX  27, 0, 0
+  {
+   COORD (1740,260)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (1641,260)
+  }
+  BUS  29, 0, 0
+  {
+   NET 23
+   VTX 27, 28
+  }
+  VTX  30, 0, 0
+  {
+   COORD (1100,260)
+  }
+  VTX  31, 0, 0
+  {
+   COORD (1240,260)
+  }
+  WIRE  32, 0, 0
+  {
+   NET 17
+   VTX 30, 31
+  }
+  VTX  33, 0, 0
+  {
+   COORD (1240,300)
+  }
+  VTX  34, 0, 0
+  {
+   COORD (1100,300)
+  }
+  WIRE  35, 0, 0
+  {
+   NET 18
+   VTX 33, 34
+  }
+  VTX  36, 0, 0
+  {
+   COORD (1100,420)
+  }
+  VTX  37, 0, 0
+  {
+   COORD (1240,420)
+  }
+  WIRE  38, 0, 0
+  {
+   NET 19
+   VTX 36, 37
+  }
+  VTX  39, 0, 0
+  {
+   COORD (1100,380)
+  }
+  VTX  40, 0, 0
+  {
+   COORD (1240,380)
+  }
+  BUS  41, 0, 0
+  {
+   NET 20
+   VTX 39, 40
+  }
+  VTX  42, 0, 0
+  {
+   COORD (1240,340)
+  }
+  VTX  43, 0, 0
+  {
+   COORD (1100,340)
+  }
+  BUS  44, 0, 0
+  {
+   NET 22
+   VTX 42, 43
+  }
+ }
+ 
+}
+

@@ -1,0 +1,1 @@
+-w -erf "F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile/Pipeline.erf" -d "F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile" -s "F:/uni/CA/project/CPU (3)/CPU/library.cfg" -j "F:/uni/CA/project/CPU (3)/CPU/Pipeline/projlib.cfg" -work Pipeline -dbg -e 100 -work Pipeline -2002 "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd" 

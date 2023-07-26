@@ -1,0 +1,2054 @@
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/RegisterFile.vhd $dsn/src/SignExtend.vhd $dsn/src/ShiftLeft.vhd $dsn/src/PCAdder.vhd $dsn/src/badPipeline.vhd $dsn/src/Controller.vhd $dsn/src/My_Types.vhd $dsn/src/FileReader.vhd $dsn/src/DataMemory.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/InstructionMemory.vhd $dsn/src/ALU.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/DecoderUnit.vhd $dsn/src/ExecuteUnit.vhd $dsn/src/BaseAdressReg.vhd $dsn/src/MemoryUnit.vhd $dsn/src/WriteBackUnit.vhd $dsn/src/16bitAdder.vhd $dsn/src/StatusRegister.vhd $dsn/src/Mem_WB_reg.vhd $dsn/src/PC_register.vhd $dsn/src/mux2-1.vhd $dsn/src/InstructionFetchUnit.vhd $dsn/src/ID_EX_reg.bde $dsn/src/IF_ID_Register.bde $dsn/src/pipeline_v1.vhd $dsn/src/Pipeline.bde $dsn/src/insidePipeline.bde $dsn/src/TestBench/adder_16bit_TB.vhd $dsn/src/TestBench/memoryunit_TB.vhd
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Error: insidePipeline.bde - 2 error(s), 77 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "Behavioral" of Entity "RegisterFile"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/SignExtend.vhd
+# Compile Entity "SignExtend"
+# Compile Architecture "Behavioral" of Entity "SignExtend"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ShiftLeft.vhd
+# Compile Entity "ShiftLeft"
+# Compile Architecture "Behavioral" of Entity "ShiftLeft"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/PCAdder.vhd
+# Compile Entity "PCAdder"
+# Compile Architecture "Behavioral" of Entity "PCAdder"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Error: COMP96_0100: badPipeline.vhd : (504, 14): Actual parameter type in port map does not match the type of the formal port 'MemDataSRCOut'.
+# Error: COMP96_0100: badPipeline.vhd : (505, 14): Actual parameter type in port map does not match the type of the formal port 'MemAddressSRCOut'.
+# Error: COMP96_0100: badPipeline.vhd : (522, 14): Actual parameter type in port map does not match the type of the formal port 'MemDataSRC'.
+# Error: COMP96_0100: badPipeline.vhd : (523, 14): Actual parameter type in port map does not match the type of the formal port 'MemAddressSRC'.
+# Error: COMP96_0122: badPipeline.vhd : (531, 2): Symbol "MEM_WB_REG" has already been declared in this scope.
+# Error: COMP96_0641: badPipeline.vhd : (532, 4): Name "Mem_WB_reg" does not refer to a component declaration.
+# Error: COMP96_0078: badPipeline.vhd : (543, 29): Unknown identifier "MemToReg".
+# Error: COMP96_0078: badPipeline.vhd : (544, 27): Unknown identifier "AluOut".
+# Error: COMP96_0078: badPipeline.vhd : (545, 27): Unknown identifier "MemoryOut".
+# Error: COMP96_0078: badPipeline.vhd : (555, 25): Unknown identifier "MemToReg".
+# Error: COMP96_0078: badPipeline.vhd : (556, 24): Unknown identifier "RD_Data".
+# Error: COMP96_0078: badPipeline.vhd : (557, 26): Unknown identifier "MemoryOut".
+# Error: COMP96_0078: badPipeline.vhd : (558, 23): Unknown identifier "AluOut".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Behavioral" of Entity "Controller"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/My_Types.vhd
+# Compile Package "p_avg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DataMemory.vhd
+# Warning: COMP96_0003: Source file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DataMemory.vhd" is empty.
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd
+# Compile Entity "IF_ID_Register"
+# Compile Architecture "IF_ID_ARC" of Entity "IF_ID_Register"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_reg"
+# Compile Architecture "ID_EX_ARC" of Entity "ID_EX_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionMemory.vhd
+# Compile Entity "IMEMORY"
+# Compile Architecture "Behavioral" of Entity "IMEMORY"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/EX_MEM_REG.vhd
+# Compile Entity "EX_Mem_reg"
+# Compile Architecture "EX_Mem_ARC" of Entity "EX_Mem_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DecoderUnit.vhd
+# Compile Entity "DecoderUnit"
+# Compile Architecture "Behavioral" of Entity "DecoderUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ExecuteUnit.vhd
+# Compile Entity "ExecuteUnit"
+# Compile Architecture "Behavioral" of Entity "ExecuteUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/BaseAdressReg.vhd
+# Compile Entity "BaseAddressReg"
+# Compile Architecture "Structural" of Entity "BaseAddressReg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/MemoryUnit.vhd
+# Compile Entity "MemoryUnit"
+# Compile Architecture "Behavioral" of Entity "MemoryUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/WriteBackUnit.vhd
+# Compile Entity "WriteBackUnit"
+# Compile Architecture "Behavioral" of Entity "WriteBackUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/16bitAdder.vhd
+# Compile Entity "adder_16bit"
+# Compile Architecture "Behavioral" of Entity "adder_16bit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/StatusRegister.vhd
+# Compile Entity "StatusRegister"
+# Compile Architecture "Structural" of Entity "StatusRegister"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/Mem_WB_reg.vhd
+# Compile Entity "Mem_WB_reg"
+# Compile Architecture "MEM_WB_ARC" of Entity "Mem_WB_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/PC_register.vhd
+# Compile Entity "PC_Register"
+# Compile Architecture "Structural" of Entity "PC_Register"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/mux2-1.vhd
+# Compile Entity "mux2to1"
+# Compile Architecture "behaviour" of Entity "mux2to1"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionFetchUnit.vhd
+# Compile Entity "IF_Unit"
+# Compile Architecture "IF_Unit_Arc" of Entity "IF_Unit"
+# File: ./../compile/ID_EX_reg.vhd
+# Compile Entity "ID_EX_reg"
+# Warning: COMP96_0994: ../compile/ID_EX_reg.vhd : (29, 1): Multiple entity "ID_EX_reg" found in "./../compile/ID_EX_reg.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd".
+# Compile Architecture "ID_EX_ARC" of Entity "ID_EX_reg"
+# Warning: COMP96_0994: ../compile/ID_EX_reg.vhd : (73, 1): Multiple architecture "ID_EX_ARC" of entity "ID_EX_reg" found in "./../compile/ID_EX_reg.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd".
+# File: ./../compile/IF_ID_Register.vhd
+# Compile Entity "IF_ID_Register"
+# Warning: COMP96_0994: IF_ID_Register.bde(IF_ID_Register.vhd) : (29, 1): Multiple entity "IF_ID_Register" found in "./../compile/IF_ID_Register.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd".
+# Compile Architecture "IF_ID_ARC" of Entity "IF_ID_Register"
+# Warning: COMP96_0994: IF_ID_Register.bde(IF_ID_Register.vhd) : (41, 1): Multiple architecture "IF_ID_ARC" of entity "IF_ID_Register" found in "./../compile/IF_ID_Register.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/pipeline_v1.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: COMP96_0994: pipeline_v1.vhd : (26, 1): Multiple architecture "Pipeline_Arc" of entity "Pipeline" found in "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/pipeline_v1.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# File: ./../compile/Pipeline.vhd
+# Compile Entity "Pipeline"
+# Warning: COMP96_0994: Pipeline.bde(Pipeline.vhd) : (31, 1): Multiple entity "Pipeline" found in "./../compile/Pipeline.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: COMP96_0994: Pipeline.bde(Pipeline.vhd) : (43, 1): Multiple architecture "Pipeline_Arc" of entity "Pipeline" found in "./../compile/Pipeline.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/adder_16bit_TB.vhd
+# Compile Entity "adder_16bit_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "adder_16bit_tb"
+# Compile Configuration "TESTBENCH_FOR_adder_16bit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/memoryunit_TB.vhd
+# Compile Entity "memoryunit_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memoryunit_tb"
+# Warning: ELAB1_0026: TestBench/memoryunit_TB.vhd : (55, 0): There is no default binding for component "MemoryUnit". (Port "AddressIn" is not on the entity).
+# Compile Configuration "TESTBENCH_FOR_memoryunit"
+# Error: ELAB1_0011: TestBench/memoryunit_TB.vhd : (139, 0): Port "CLRaddressIn" is on entity "MemoryUnit" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/memoryunit_TB.vhd : (139, 0): Port "AddressIn" is on component "MemoryUnit" but not on the entity "MemoryUnit".
+# Error: COMP96_0203: TestBench/memoryunit_TB.vhd : (140, 4): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/memoryunit_TB.vhd : (140, 0): Port "CLRaddressIn" is on entity "MemoryUnit" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/memoryunit_TB.vhd : (140, 0): Port "AddressIn" is on component "MemoryUnit" but not on the entity "MemoryUnit".
+# Compile failure 18 Errors 9 Warnings  Analysis time :  1.0 [s]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/InstructionFetchUnit.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionFetchUnit.vhd
+# Compile Entity "IF_Unit"
+# Compile Architecture "IF_Unit_Arc" of Entity "IF_Unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Error: insidePipeline.bde - 2 error(s), 82 warning(s)
+# DRC: DRC process completed in 7 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/RegisterFile.vhd $dsn/src/SignExtend.vhd $dsn/src/ShiftLeft.vhd $dsn/src/PCAdder.vhd $dsn/src/badPipeline.vhd $dsn/src/Controller.vhd $dsn/src/My_Types.vhd $dsn/src/FileReader.vhd $dsn/src/DataMemory.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/InstructionMemory.vhd $dsn/src/ALU.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/DecoderUnit.vhd $dsn/src/ExecuteUnit.vhd $dsn/src/BaseAdressReg.vhd $dsn/src/MemoryUnit.vhd $dsn/src/WriteBackUnit.vhd $dsn/src/16bitAdder.vhd $dsn/src/StatusRegister.vhd $dsn/src/Mem_WB_reg.vhd $dsn/src/PC_register.vhd $dsn/src/mux2-1.vhd $dsn/src/InstructionFetchUnit.vhd $dsn/src/ID_EX_reg.bde $dsn/src/IF_ID_Register.bde $dsn/src/pipeline_v1.vhd $dsn/src/Pipeline.bde $dsn/src/insidePipeline.bde $dsn/src/TestBench/adder_16bit_TB.vhd $dsn/src/TestBench/memoryunit_TB.vhd
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Error: insidePipeline.bde - 2 error(s), 82 warning(s)
+# DRC: DRC process completed in 5 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "Behavioral" of Entity "RegisterFile"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/SignExtend.vhd
+# Compile Entity "SignExtend"
+# Compile Architecture "Behavioral" of Entity "SignExtend"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ShiftLeft.vhd
+# Compile Entity "ShiftLeft"
+# Compile Architecture "Behavioral" of Entity "ShiftLeft"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/PCAdder.vhd
+# Compile Entity "PCAdder"
+# Compile Architecture "Behavioral" of Entity "PCAdder"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: ELAB1_0026: badPipeline.vhd : (332, 0): There is no default binding for component "IF_Unit". (Port "IsBranch" is not on the entity).
+# Error: COMP96_0100: badPipeline.vhd : (504, 14): Actual parameter type in port map does not match the type of the formal port 'MemDataSRCOut'.
+# Error: COMP96_0100: badPipeline.vhd : (505, 14): Actual parameter type in port map does not match the type of the formal port 'MemAddressSRCOut'.
+# Error: COMP96_0100: badPipeline.vhd : (522, 14): Actual parameter type in port map does not match the type of the formal port 'MemDataSRC'.
+# Error: COMP96_0100: badPipeline.vhd : (523, 14): Actual parameter type in port map does not match the type of the formal port 'MemAddressSRC'.
+# Error: COMP96_0122: badPipeline.vhd : (531, 2): Symbol "MEM_WB_REG" has already been declared in this scope.
+# Error: COMP96_0641: badPipeline.vhd : (532, 4): Name "Mem_WB_reg" does not refer to a component declaration.
+# Error: COMP96_0078: badPipeline.vhd : (543, 29): Unknown identifier "MemToReg".
+# Error: COMP96_0078: badPipeline.vhd : (544, 27): Unknown identifier "AluOut".
+# Error: COMP96_0078: badPipeline.vhd : (545, 27): Unknown identifier "MemoryOut".
+# Error: COMP96_0078: badPipeline.vhd : (555, 25): Unknown identifier "MemToReg".
+# Error: COMP96_0078: badPipeline.vhd : (556, 24): Unknown identifier "RD_Data".
+# Error: COMP96_0078: badPipeline.vhd : (557, 26): Unknown identifier "MemoryOut".
+# Error: COMP96_0078: badPipeline.vhd : (558, 23): Unknown identifier "AluOut".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Behavioral" of Entity "Controller"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/My_Types.vhd
+# Compile Package "p_avg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DataMemory.vhd
+# Warning: COMP96_0003: Source file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DataMemory.vhd" is empty.
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd
+# Compile Entity "IF_ID_Register"
+# Compile Architecture "IF_ID_ARC" of Entity "IF_ID_Register"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_reg"
+# Compile Architecture "ID_EX_ARC" of Entity "ID_EX_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionMemory.vhd
+# Compile Entity "IMEMORY"
+# Compile Architecture "Behavioral" of Entity "IMEMORY"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/EX_MEM_REG.vhd
+# Compile Entity "EX_Mem_reg"
+# Compile Architecture "EX_Mem_ARC" of Entity "EX_Mem_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DecoderUnit.vhd
+# Compile Entity "DecoderUnit"
+# Compile Architecture "Behavioral" of Entity "DecoderUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ExecuteUnit.vhd
+# Compile Entity "ExecuteUnit"
+# Compile Architecture "Behavioral" of Entity "ExecuteUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/BaseAdressReg.vhd
+# Compile Entity "BaseAddressReg"
+# Compile Architecture "Structural" of Entity "BaseAddressReg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/MemoryUnit.vhd
+# Compile Entity "MemoryUnit"
+# Compile Architecture "Behavioral" of Entity "MemoryUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/WriteBackUnit.vhd
+# Compile Entity "WriteBackUnit"
+# Compile Architecture "Behavioral" of Entity "WriteBackUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/16bitAdder.vhd
+# Compile Entity "adder_16bit"
+# Compile Architecture "Behavioral" of Entity "adder_16bit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/StatusRegister.vhd
+# Compile Entity "StatusRegister"
+# Compile Architecture "Structural" of Entity "StatusRegister"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/Mem_WB_reg.vhd
+# Compile Entity "Mem_WB_reg"
+# Compile Architecture "MEM_WB_ARC" of Entity "Mem_WB_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/PC_register.vhd
+# Compile Entity "PC_Register"
+# Compile Architecture "Structural" of Entity "PC_Register"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/mux2-1.vhd
+# Compile Entity "mux2to1"
+# Compile Architecture "behaviour" of Entity "mux2to1"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionFetchUnit.vhd
+# Compile Entity "IF_Unit"
+# Compile Architecture "IF_Unit_Arc" of Entity "IF_Unit"
+# File: ./../compile/ID_EX_reg.vhd
+# Compile Entity "ID_EX_reg"
+# Warning: COMP96_0994: ../compile/ID_EX_reg.vhd : (29, 1): Multiple entity "ID_EX_reg" found in "./../compile/ID_EX_reg.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd".
+# Compile Architecture "ID_EX_ARC" of Entity "ID_EX_reg"
+# Warning: COMP96_0994: ../compile/ID_EX_reg.vhd : (73, 1): Multiple architecture "ID_EX_ARC" of entity "ID_EX_reg" found in "./../compile/ID_EX_reg.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd".
+# File: ./../compile/IF_ID_Register.vhd
+# Compile Entity "IF_ID_Register"
+# Warning: COMP96_0994: IF_ID_Register.bde(IF_ID_Register.vhd) : (29, 1): Multiple entity "IF_ID_Register" found in "./../compile/IF_ID_Register.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd".
+# Compile Architecture "IF_ID_ARC" of Entity "IF_ID_Register"
+# Warning: COMP96_0994: IF_ID_Register.bde(IF_ID_Register.vhd) : (41, 1): Multiple architecture "IF_ID_ARC" of entity "IF_ID_Register" found in "./../compile/IF_ID_Register.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/pipeline_v1.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: COMP96_0994: pipeline_v1.vhd : (26, 1): Multiple architecture "Pipeline_Arc" of entity "Pipeline" found in "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/pipeline_v1.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# File: ./../compile/Pipeline.vhd
+# Compile Entity "Pipeline"
+# Warning: COMP96_0994: Pipeline.bde(Pipeline.vhd) : (31, 1): Multiple entity "Pipeline" found in "./../compile/Pipeline.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: COMP96_0994: Pipeline.bde(Pipeline.vhd) : (43, 1): Multiple architecture "Pipeline_Arc" of entity "Pipeline" found in "./../compile/Pipeline.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/adder_16bit_TB.vhd
+# Compile Entity "adder_16bit_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "adder_16bit_tb"
+# Compile Configuration "TESTBENCH_FOR_adder_16bit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/memoryunit_TB.vhd
+# Compile Entity "memoryunit_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memoryunit_tb"
+# Warning: ELAB1_0026: TestBench/memoryunit_TB.vhd : (55, 0): There is no default binding for component "MemoryUnit". (Port "AddressIn" is not on the entity).
+# Compile Configuration "TESTBENCH_FOR_memoryunit"
+# Error: ELAB1_0011: TestBench/memoryunit_TB.vhd : (139, 0): Port "CLRaddressIn" is on entity "MemoryUnit" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/memoryunit_TB.vhd : (139, 0): Port "AddressIn" is on component "MemoryUnit" but not on the entity "MemoryUnit".
+# Error: COMP96_0203: TestBench/memoryunit_TB.vhd : (140, 4): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/memoryunit_TB.vhd : (140, 0): Port "CLRaddressIn" is on entity "MemoryUnit" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/memoryunit_TB.vhd : (140, 0): Port "AddressIn" is on component "MemoryUnit" but not on the entity "MemoryUnit".
+# Compile failure 18 Errors 10 Warnings  Analysis time :  1.0 [s]
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Error: insidePipeline.bde - 2 error(s), 82 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/InstructionFetchUnit.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionFetchUnit.vhd
+# Compile Entity "IF_Unit2"
+# Compile Architecture "IF_Unit_Arc" of Entity "IF_Unit2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Error: insidePipeline.bde - 2 error(s), 82 warning(s)
+# DRC: DRC process completed in 5 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/DecoderUnit.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DecoderUnit.vhd
+# Compile Entity "DecoderUnit2"
+# Error: COMP96_0111: DecoderUnit.vhd : (48, 5): Labels do not match.
+# Compile Architecture "Behavioral" of Entity "DecoderUnit2"
+# Error: COMP96_0056: DecoderUnit.vhd : (52, 1): Cannot find referenced entity declaration "DecoderUnit2".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/DecoderUnit.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DecoderUnit.vhd
+# Compile Entity "DecoderUnit2"
+# Compile Architecture "Behavioral" of Entity "DecoderUnit2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 5 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/Pipeline.bde
+# File: ./../compile/Pipeline.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/compile/insidePipeline.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/compile/insidePipeline.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/RegisterFile.vhd $dsn/src/SignExtend.vhd $dsn/src/ShiftLeft.vhd $dsn/src/PCAdder.vhd $dsn/src/badPipeline.vhd $dsn/src/Controller.vhd $dsn/src/My_Types.vhd $dsn/src/FileReader.vhd $dsn/src/DataMemory.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/InstructionMemory.vhd $dsn/src/ALU.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/DecoderUnit.vhd $dsn/src/ExecuteUnit.vhd $dsn/src/BaseAdressReg.vhd $dsn/src/MemoryUnit.vhd $dsn/src/WriteBackUnit.vhd $dsn/src/16bitAdder.vhd $dsn/src/StatusRegister.vhd $dsn/src/Mem_WB_reg.vhd $dsn/src/PC_register.vhd $dsn/src/mux2-1.vhd $dsn/src/InstructionFetchUnit.vhd $dsn/src/ID_EX_reg.bde $dsn/src/IF_ID_Register.bde $dsn/src/pipeline_v1.vhd $dsn/src/Pipeline.bde $dsn/src/insidePipeline.bde $dsn/src/TestBench/adder_16bit_TB.vhd $dsn/src/TestBench/memoryunit_TB.vhd
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/RegisterFile.vhd
+# Compile Entity "RegisterFile"
+# Compile Architecture "Behavioral" of Entity "RegisterFile"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/SignExtend.vhd
+# Compile Entity "SignExtend"
+# Compile Architecture "Behavioral" of Entity "SignExtend"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ShiftLeft.vhd
+# Compile Entity "ShiftLeft"
+# Compile Architecture "Behavioral" of Entity "ShiftLeft"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/PCAdder.vhd
+# Compile Entity "PCAdder"
+# Compile Architecture "Behavioral" of Entity "PCAdder"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: ELAB1_0026: badPipeline.vhd : (332, 0): There is no default binding for component "IF_Unit". (Port "IsBranch" is not on the entity).
+# Error: COMP96_0100: badPipeline.vhd : (504, 14): Actual parameter type in port map does not match the type of the formal port 'MemDataSRCOut'.
+# Error: COMP96_0100: badPipeline.vhd : (505, 14): Actual parameter type in port map does not match the type of the formal port 'MemAddressSRCOut'.
+# Error: COMP96_0100: badPipeline.vhd : (522, 14): Actual parameter type in port map does not match the type of the formal port 'MemDataSRC'.
+# Error: COMP96_0100: badPipeline.vhd : (523, 14): Actual parameter type in port map does not match the type of the formal port 'MemAddressSRC'.
+# Error: COMP96_0122: badPipeline.vhd : (531, 2): Symbol "MEM_WB_REG" has already been declared in this scope.
+# Error: COMP96_0641: badPipeline.vhd : (532, 4): Name "Mem_WB_reg" does not refer to a component declaration.
+# Error: COMP96_0078: badPipeline.vhd : (543, 29): Unknown identifier "MemToReg".
+# Error: COMP96_0078: badPipeline.vhd : (544, 27): Unknown identifier "AluOut".
+# Error: COMP96_0078: badPipeline.vhd : (545, 27): Unknown identifier "MemoryOut".
+# Error: COMP96_0078: badPipeline.vhd : (555, 25): Unknown identifier "MemToReg".
+# Error: COMP96_0078: badPipeline.vhd : (556, 24): Unknown identifier "RD_Data".
+# Error: COMP96_0078: badPipeline.vhd : (557, 26): Unknown identifier "MemoryOut".
+# Error: COMP96_0078: badPipeline.vhd : (558, 23): Unknown identifier "AluOut".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Behavioral" of Entity "Controller"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/My_Types.vhd
+# Compile Package "p_avg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DataMemory.vhd
+# Warning: COMP96_0003: Source file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DataMemory.vhd" is empty.
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd
+# Compile Entity "IF_ID_Register"
+# Compile Architecture "IF_ID_ARC" of Entity "IF_ID_Register"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_reg"
+# Compile Architecture "ID_EX_ARC" of Entity "ID_EX_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionMemory.vhd
+# Compile Entity "IMEMORY"
+# Compile Architecture "Behavioral" of Entity "IMEMORY"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/EX_MEM_REG.vhd
+# Compile Entity "EX_Mem_reg"
+# Compile Architecture "EX_Mem_ARC" of Entity "EX_Mem_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/DecoderUnit.vhd
+# Compile Entity "DecoderUnit2"
+# Compile Architecture "Behavioral" of Entity "DecoderUnit2"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ExecuteUnit.vhd
+# Compile Entity "ExecuteUnit"
+# Compile Architecture "Behavioral" of Entity "ExecuteUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/BaseAdressReg.vhd
+# Compile Entity "BaseAddressReg"
+# Compile Architecture "Structural" of Entity "BaseAddressReg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/MemoryUnit.vhd
+# Compile Entity "MemoryUnit"
+# Compile Architecture "Behavioral" of Entity "MemoryUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/WriteBackUnit.vhd
+# Compile Entity "WriteBackUnit"
+# Compile Architecture "Behavioral" of Entity "WriteBackUnit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/16bitAdder.vhd
+# Compile Entity "adder_16bit"
+# Compile Architecture "Behavioral" of Entity "adder_16bit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/StatusRegister.vhd
+# Compile Entity "StatusRegister"
+# Compile Architecture "Structural" of Entity "StatusRegister"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/Mem_WB_reg.vhd
+# Compile Entity "Mem_WB_reg"
+# Compile Architecture "MEM_WB_ARC" of Entity "Mem_WB_reg"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/PC_register.vhd
+# Compile Entity "PC_Register"
+# Compile Architecture "Structural" of Entity "PC_Register"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/mux2-1.vhd
+# Compile Entity "mux2to1"
+# Compile Architecture "behaviour" of Entity "mux2to1"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/InstructionFetchUnit.vhd
+# Compile Entity "IF_Unit2"
+# Compile Architecture "IF_Unit_Arc" of Entity "IF_Unit2"
+# File: ./../compile/ID_EX_reg.vhd
+# Compile Entity "ID_EX_reg"
+# Warning: COMP96_0994: ../compile/ID_EX_reg.vhd : (29, 1): Multiple entity "ID_EX_reg" found in "./../compile/ID_EX_reg.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd".
+# Compile Architecture "ID_EX_ARC" of Entity "ID_EX_reg"
+# Warning: COMP96_0994: ../compile/ID_EX_reg.vhd : (73, 1): Multiple architecture "ID_EX_ARC" of entity "ID_EX_reg" found in "./../compile/ID_EX_reg.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/ID_EX_Reg.vhd".
+# File: ./../compile/IF_ID_Register.vhd
+# Compile Entity "IF_ID_Register"
+# Warning: COMP96_0994: IF_ID_Register.bde(IF_ID_Register.vhd) : (29, 1): Multiple entity "IF_ID_Register" found in "./../compile/IF_ID_Register.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd".
+# Compile Architecture "IF_ID_ARC" of Entity "IF_ID_Register"
+# Warning: COMP96_0994: IF_ID_Register.bde(IF_ID_Register.vhd) : (41, 1): Multiple architecture "IF_ID_ARC" of entity "IF_ID_Register" found in "./../compile/IF_ID_Register.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/IF_ID_REG.vhd".
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/pipeline_v1.vhd
+# Compile Entity "Pipeline"
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: COMP96_0994: pipeline_v1.vhd : (26, 1): Multiple architecture "Pipeline_Arc" of entity "Pipeline" found in "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/pipeline_v1.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# File: ./../compile/Pipeline.vhd
+# Compile Entity "Pipeline"
+# Warning: COMP96_0994: Pipeline.bde(Pipeline.vhd) : (31, 1): Multiple entity "Pipeline" found in "./../compile/Pipeline.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# Compile Architecture "Pipeline_Arc" of Entity "Pipeline"
+# Warning: COMP96_0994: Pipeline.bde(Pipeline.vhd) : (43, 1): Multiple architecture "Pipeline_Arc" of entity "Pipeline" found in "./../compile/Pipeline.vhd", "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/badPipeline.vhd".
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/adder_16bit_TB.vhd
+# Compile Entity "adder_16bit_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "adder_16bit_tb"
+# Compile Configuration "TESTBENCH_FOR_adder_16bit"
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/memoryunit_TB.vhd
+# Compile Entity "memoryunit_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memoryunit_tb"
+# Warning: ELAB1_0026: TestBench/memoryunit_TB.vhd : (55, 0): There is no default binding for component "MemoryUnit". (Port "AddressIn" is not on the entity).
+# Compile Configuration "TESTBENCH_FOR_memoryunit"
+# Error: ELAB1_0011: TestBench/memoryunit_TB.vhd : (139, 0): Port "CLRaddressIn" is on entity "MemoryUnit" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/memoryunit_TB.vhd : (139, 0): Port "AddressIn" is on component "MemoryUnit" but not on the entity "MemoryUnit".
+# Error: COMP96_0203: TestBench/memoryunit_TB.vhd : (140, 4): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/memoryunit_TB.vhd : (140, 0): Port "CLRaddressIn" is on entity "MemoryUnit" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/memoryunit_TB.vhd : (140, 0): Port "AddressIn" is on component "MemoryUnit" but not on the entity "MemoryUnit".
+# Compile failure 70 Errors 10 Warnings  Analysis time :  1.0 [s]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/compile/insidePipeline1.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile/insidePipeline1.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/compile/insidePipeline1.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile/insidePipeline1.vhd
+# Compile Entity "Fub3"
+# Compile Architecture "insidePipeline" of Entity "Fub3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/compile/insidePipeline1.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/compile/insidePipeline1.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline_v1.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline_v1.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline_v1.vhd : (518, 19): Improper array length (8). Expected length is 16.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline_v1.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline_v1.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline.bde
+# DRC: Checking file "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde".
+# DRC: Warning: insidePipeline.bde - 0 error(s), 76 warning(s)
+# DRC: DRC process completed in 6 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating F:\uni\CA\project\CPU (3)\CPU\Pipeline\compile\insidePipeline.vhd from F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\insidePipeline.bde ...
+# Generation successful
+# File: ./../compile/insidePipeline.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (337, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (340, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (345, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (346, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (359, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (360, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (362, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (363, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (372, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (373, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (374, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (375, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (387, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (388, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (390, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (391, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (392, 17): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (399, 32): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (400, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (401, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (402, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (418, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (427, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (428, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (429, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (430, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (442, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (448, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (449, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (450, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (455, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (459, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (460, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (461, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (469, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (470, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (476, 34): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (477, 25): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (489, 27): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (490, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (495, 26): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (507, 28): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (518, 19): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (519, 18): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (520, 24): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (521, 23): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (530, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (531, 20): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (534, 22): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (536, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (537, 21): Improper array length (8). Expected length is 16.
+# Error: COMP96_0367: insidePipeline.bde(insidePipeline.vhd) : (540, 23): Improper array length (8). Expected length is 16.
+# Compile failure 52 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6659 kB (elbread=427 elab2=6088 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:13 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: 10 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6659 kB (elbread=427 elab2=6088 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:13 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6659 kB (elbread=427 elab2=6088 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:14 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: stopped at time: 100 ns
+# VSIM: Error: Fatal error occurred during simulation.
+run 100 ns
+run 100 ns
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Error: COMP96_0019: TestBench/pipeline_TB.vhd : (137, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: TestBench/pipeline_TB.vhd : (139, 1): Keyword 'end' expected.
+# Error: COMP96_0016: TestBench/pipeline_TB.vhd : (139, 15): Design unit declaration expected.
+# Error: COMP96_0018: TestBench/pipeline_TB.vhd : (142, 17): Identifier expected.
+# Error: COMP96_0016: TestBench/pipeline_TB.vhd : (142, 24): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:15 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: stopped at time: 100 ns
+# VSIM: Error: Fatal error occurred during simulation.
+run 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:15 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: stopped at time: 100 ns
+# VSIM: Error: Fatal error occurred during simulation.
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/rst" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/initInsts" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/Oout" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/Cout" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/Zout" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/Nout" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/eof" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/Stop_Simulation" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/pipeline_v1_tb/clk_period" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:16 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:16 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: stopped at time: 100 ns
+# VSIM: Error: Fatal error occurred during simulation.
+run 100 ns
+run 100 ns
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:17 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: stopped at time: 100 ns
+# VSIM: Error: Fatal error occurred during simulation.
+run
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:18 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:18 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6090 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:20 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6089 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:20 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+run
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 300 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: Stopped at time 300 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+run 100 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6089 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:21 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6661 kB (elbread=427 elab2=6089 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:22 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 300 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: Stopped at time 300 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/FileReader.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5636 kB (elbread=427 elab2=5065 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:24 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5636 kB (elbread=427 elab2=5065 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:24 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/wave.asdb'.
+run
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 300 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: Stopped at time 300 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+step
+step
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/FileReader.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/FileReader.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5636 kB (elbread=427 elab2=5065 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:25 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 300 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: Stopped at time 300 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+step
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5636 kB (elbread=427 elab2=5065 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:26 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5636 kB (elbread=427 elab2=5065 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:26 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+step
+step
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5636 kB (elbread=427 elab2=5065 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:27 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+step
+step
+run 100 ns
+# KERNEL: stopped at time: 250 ns
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 300 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# KERNEL: Stopped at time 300 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5638 kB (elbread=427 elab2=5067 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:29 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# RUNTIME: Fatal Error: RUNTIME_0055 FileReader.vhd (42): Cannot read from not open file.
+# KERNEL: Time: 300 ns,  Iteration: 1,  Instance: /pipeline_v1_tb/File_Reader_inst,  Process: line__33.
+# VSIM: Error: Fatal error occurred during simulation.
+step
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/FileReader.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/FileReader.vhd
+# Compile Entity "File_Reader"
+# Compile Architecture "Behavioral" of Entity "File_Reader"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5638 kB (elbread=427 elab2=5067 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:30 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+step
+step
+step
+step
+step
+step
+step
+step
+step
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/insidePipeline_v1.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline_v1.vhd
+# Compile Entity "Fub2"
+# Compile Architecture "insidePipeline" of Entity "Fub2"
+# Warning: DAGGEN_0001: insidePipeline_v1.vhd : (548, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Compile success 0 Errors 1 Warnings  Analysis time :  78.0 [ms]
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5638 kB (elbread=427 elab2=5067 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:35 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+step
+step
+step
+step
+step
+run 100 ns
+# KERNEL: stopped at time: 250 ns
+step
+step
+step
+step
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# Stopped in "F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd" at line 112 in process of instance "/pipeline_v1_tb/INIT_PROCESS".
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+step
+step
+step
+step
+step
+step
+step
+step
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5638 kB (elbread=427 elab2=5067 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:38 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -dbg -e 100 -work Pipeline -2002  $dsn/src/TestBench/pipeline_TB.vhd
+# File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd
+# Compile Entity "pipeline_v1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"
+# Compile Configuration "TESTBENCH_FOR_pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5638 kB (elbread=427 elab2=5067 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location F:\uni\CA\project\CPU (3)\CPU\Pipeline\src\wave.asdb
+#  8:38 AM, Monday, July 10, 2023
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+endsim
+# VSIM: Simulation has finished.

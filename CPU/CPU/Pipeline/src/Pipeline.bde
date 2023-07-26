@@ -1,0 +1,191 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 16
+ VARIABLES
+ {
+  #ARCHITECTURE="Pipeline_Arc"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"initinsts\"><left=\"\"><direction=\"unconstrained\"><right=\"\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="Pipeline"
+  #LANGUAGE="VHDL"
+  AUTHOR="ASUS"
+  COMPANY="za33"
+  CREATIONDATE="7/9/2023"
+  SOURCE="..\\src\\pipeline_v1.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library pipeline;\n"+
+"use pipeline.p_avg.all;\n"+
+"use std.TEXTIO.all;\n"+
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.NUMERIC_STD.all;\n"+
+"use ieee.STD_LOGIC_UNSIGNED.all;\n"+
+"use ieee.MATH_REAL.UNIFORM;\n"+
+"use ieee.STD_LOGIC_TEXTIO.all;"
+   RECT (220,260,620,660)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  INSTANCE  2, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,240)
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="rst"
+    #SYMBOL="Input"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,280)
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #IS_UNCONSTRAINED_PORT="1"
+    #LIBRARY="#terminals"
+    #MDA_BASE_TYPE="STD_LOGIC_VECTOR"
+    #MDA_KIND="UNCONSTR"
+    #MDA_RECORD_TOKEN="MDA"
+    #REFERENCE="initInsts"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="Mem_Array"
+   }
+   COORD (820,320)
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="Oout"
+    #SYMBOL="Output"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,360)
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="Cout"
+    #SYMBOL="Output"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,400)
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="Zout"
+    #SYMBOL="Output"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,440)
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="Nout"
+    #SYMBOL="Output"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,480)
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (769,240,769,240)
+   ALIGN 6
+   PARENT 2
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (769,280,769,280)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (769,320,769,320)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (871,360,871,360)
+   ALIGN 4
+   PARENT 5
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (871,400,871,400)
+   ALIGN 4
+   PARENT 6
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (871,440,871,440)
+   ALIGN 4
+   PARENT 7
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (871,480,871,480)
+   ALIGN 4
+   PARENT 8
+  }
+ }
+ 
+}
+

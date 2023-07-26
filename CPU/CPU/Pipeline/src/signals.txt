@@ -1,0 +1,68 @@
+signal Branch_s : std_logic ; 
+signal Z_s : std_logic ; 
+signal Jump_s : std_logic ; 
+signal BranchingDest_s : std_logic_vector(CPUSize-1 downto 0)  ;  --to instruction fetch  
+signal JumpingDest_s : std_logic_vector(CPUSize-1 downto 0)  ;  --to instruction fetch   
+signal Flush_s : std_logic ; 
+signal InsOut_s : : std_logic_vector(CPUSize-1 downto 0)  ;  --to instruction fetch   
+signal Next_InsOut_s  : std_logic_vector(CPUSize-1 downto 0)  ;  --to instruction fetch   
+signal PC_s : std_logic_vector(CPUSize-1 downto 0)  ;  --to instruction fetch   
+signal Next_PC_s : std_logic_vector(CPUSize-1 downto 0)  ;  --to instruction fetch   
+
+signal NAlu_s : std_logic ; 
+signal CAlu_s : std_logic ; 
+signal OAlu_s : std_logic ; 
+signal ZAlu_s : std_logic ; 
+
+
+signal writeRegister_S : std_logic_vector(3 downto 0) ;  	
+signal writeDataIN_s : std_logic_vector(CPUSize-1 downto 0) ;
+
+signal => : std_logic_vector(CPUSize-1 downto 0) ; 
+signal Read2_Dec : std_logic_vector(CPUSize-1 downto 0) ;   
+signal RDregister_Dec : std_logic_vector(CPUSize-1 downto 0) ;   
+signal Rsregister_Dec : std_logic_vector(CPUSize-1 downto 0) ;   
+signal WriteReg_Dec : std_logic_vector(3 downto 0) ;
+signal SigneExtendedAddress_Dec : std_logic_vector(CPUSize-1 downto 0) ;
+signal ShiftedData_Dec : std_logic_vector(CPUSize-1 downto 0) ;
+signal JumpingDest_Dec : std_logic_vector(CPUSize-1 downto 0) ;
+signal MemReadOut_Dec : std_logic  ;  
+signal MemWriteOut_Dec : std_logic ; 
+signal AlU_SrcOut_Dec1 : std_logic_vector(1 downto 0);  
+signal AlU_SrcOut_Dec2 : std_logic_vector(1 downto 0);  
+signal BAWriteOut_Dec : std_logic  ;  
+signal MemDataSRCOut_Dec : std_logic  ;
+signal MemAddressSRCOut_Dec : std_logic  ;  
+signal RegWriteOut_Dec : std_logic  ;  
+signal MemtoRegOut_Dec : std_logic  ;  
+signal ALUOpOut_Dec :std_logic_vector(3 downto 0)  ; 
+signal MemCLRaddress_Dec :  std_logic_vector(CPUSize-1 downto 0) -- to id/ex 
+
+
+
+signal Read1_ID_EXE_MEM_s : std_logic_vector(CPUSize-1 downto 0) ; 
+signal Read2_ID_EXE_MEM_s : signal std_logic_vector(CPUSize-1 downto 0) ;
+signal RDregister_ID_EXE_MEM_s :  std_logic_vector(3 downto 0) ;  
+signal Rsregister_ID_EXE_MEM_s :  std_logic_vector(3 downto 0) ; 
+signal SigneExtendedAddress_ID_EXE_MEM_s :  std_logic_vector(CPUSize-1 downto 0) ;
+signal ShiftedData_ID_EXE_MEM_s :  std_logic_vector(CPUSize-1 downto 0) ;
+signal WriteRegister_ID_EXE_MEM_s :  std_logic_vector(3 downto 0) ;  
+signal MemRead_ID_EXE_MEM_s :  std_logic ; 
+signal MemWrite_ID_EXE_MEM_s : std_logic ; 
+signal AlUSrc1_ID_EXE_MEM_s :  std_logic_vector(1 downto 0);
+signal AlUSrc2_ID_EXE_MEM_s :  std_logic_vector(1 downto 0);
+signal BAWrite_ID_EXE_MEM_s :  std_logic ; 
+signal MemDataSRt_ID_EXE_MEM_s :  std_logic ;  
+signal MemAddressSRC_ID_EXE_MEM_s :  std_logic ; 
+signal RegWrite_ID_EXE_MEM_s :  std_logic ; 
+signal MemtoReg_ID_EXE_MEM_s :  std_logic_vector(1 downto 0) ; 
+signal ALUOp_ID_EXE_MEM_s :  std_logic_vector(3 downto 0)  ; 
+signal MemCLRaddress_s :  std_logic_vector(CPUSize-1 downto 0) ;
+
+signal AluOut_Ex : std_logic_vector(CPUSize-1 downto 0) ;
+signal Reg_Data_Ex : std_logic_vector(CPUSize-1 downto 0) ; -- to reg ex/mem; 
+
+
+
+
+

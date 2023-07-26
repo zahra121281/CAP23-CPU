@@ -1,0 +1,12 @@
+ReadIn1 :in std_logic_vector(CPUSize-1 downto 0) ; 
+
+SigneExtendedAddressIn : in std_logic_vector(CPUSize-1 downto 0) ;
+ShiftedDataIn : in std_logic_vector(CPUSize-1 downto 0) ;
+
+AlUSrcIn1 :in std_logic_vector(1 downto 0);
+AlUSrcIn2 :in std_logic_vector(1 downto 0);
+BAWriteIn :in std_logic ; 
+
+
+ALUOpIn :in std_logic_vector(3 downto 0)  ; 
+

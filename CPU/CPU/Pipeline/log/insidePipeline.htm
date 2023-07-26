@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - insidePipeline.bde</TITLE>
+<STYLE>
+* {font-family: sans-serif;}
+.Err	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.Warn	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.Info	{color:#000000;cursor:hand;text-decoration:underline;}
+.Sccss  {color:#009600;cursor:hand;text-decoration:underline;}
+.ErrH	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.WarnH	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.InfoH	{color:#000000;cursor:hand;text-decoration:underline;}
+.Err1	{color:#FF0000;}
+.Warn1	{color:#0000FF;}
+.Info1	{color:#000000;}
+.Sccss1 {color:#009600;}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" style="background-image:url(file:///C:/Aldec/Active-HDL-13-x64/Flows/Res/default.bmp); background-repeat: repeat;">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - insidePipeline.bde</H2>
+
+Created on Mon 2023-07-10 at 08:09:54
+<hr style="height:2px;border-width:0;color:#008080;background-color:#008080">
+<SPAN class=Info1>Checking file &quot;F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde&quot;.</SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Incompatible range in mapping of nets
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1793');>	'U12' instance: 'RDregister(3:0)' output bus pin and 'BUS1792(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1793');>	'U6' instance: 'RDregisterIn(3:0)' input bus pin and 'BUS1792(7:0)' bus signal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Ambiguous range in net mapping
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416,1602');>	'U1' instance: 'AluOut(CPUSize-1:0)' output bus pin and 'BUS1602(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416,1732');>	'U1' instance: 'Read1(CPUSize-1:0)' input bus pin and 'BUS1732(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416,1688');>	'U1' instance: 'Read2(CPUSize-1:0)' input bus pin and 'NET1425(15:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416,1610');>	'U1' instance: 'Reg_data(CPUSize-1:0)' output bus pin and 'BUS1610(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416,1696');>	'U1' instance: 'ShiftedData(CPUSize-1:0)' input bus pin and 'BUS1696(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416,1429');>	'U1' instance: 'SigneExtendedAddress(CPUSize-1:0)' input bus pin and 'NET1429(15:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2478,1333');>	'U10' instance: 'BranchingDest(CPUSize-1:0)' input bus pin and 'BUS1247(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2478,637');>	'U10' instance: 'InsOut(CPUSize-1:0)' output bus pin and 'BUS637(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2478,1334');>	'U10' instance: 'JumpingDest(CPUSize-1:0)' input bus pin and 'BUS1247(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2478,649');>	'U10' instance: 'PC_Out(CPUSize-1:0)' output bus pin and 'BUS649(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2092,2101');>	'U11' instance: 'AluOut(CPUSize-1:0)' input bus pin and 'BUS2101(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2092,2148');>	'U11' instance: 'DAtaToReg(CPUSize-1:0)' output bus pin and 'BUS2148(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2092,2109');>	'U11' instance: 'MemoryOut(CPUSize-1:0)' input bus pin and 'BUS2109(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2092,2140');>	'U11' instance: 'RD_Data(CPUSize-1:0)' input bus pin and 'BUS2121(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1333');>	'U12' instance: 'BranchDest(CPUSize-1:0)' output bus pin and 'BUS1247(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,676');>	'U12' instance: 'Instruction(CPUSize-1:0)' input bus pin and 'BUS676(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1334');>	'U12' instance: 'JumpingDest(CPUSize-1:0)' output bus pin and 'BUS1247(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1831');>	'U12' instance: 'MemCLRaddress(CPUSize-1:0)' output bus pin and 'BUS1831(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,689');>	'U12' instance: 'PC_next(CPUSize-1:0)' input bus pin and 'BUS689(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1742');>	'U12' instance: 'Read1(CPUSize-1:0)' output bus pin and 'BUS1742(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1750');>	'U12' instance: 'Read2(CPUSize-1:0)' output bus pin and 'BUS1750(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1794');>	'U12' instance: 'ShiftedData(CPUSize-1:0)' output bus pin and 'BUS1792(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,1805');>	'U12' instance: 'SigneExtendedAddress(CPUSize-1:0)' output bus pin and 'BUS1805(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790,2148');>	'U12' instance: 'writeDataIN(CPUSize-1:0)' input bus pin and 'BUS2148(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=611,637');>	'U3' instance: 'Ins_In(CPUSize-1:0)' input bus pin and 'BUS637(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=611,676');>	'U3' instance: 'Ins_out(CPUSize-1:0)' output bus pin and 'BUS676(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=611,649');>	'U3' instance: 'Next_PC_IN(CPUSize-1:0)' input bus pin and 'BUS649(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=611,689');>	'U3' instance: 'Next_PC_out(CPUSize-1:0)' output bus pin and 'BUS689(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1602');>	'U4' instance: 'AluOut1(CPUSize-1:0)' input bus pin and 'BUS1602(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,2023');>	'U4' instance: 'AluOut2(CPUSize-1:0)' output bus pin and 'BUS2023(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1902');>	'U4' instance: 'MemCLRaddressIn(CPUSize-1:0)' input bus pin and 'BUS1902(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1978');>	'U4' instance: 'MemCLRaddressOut(CPUSize-1:0)' output bus pin and 'BUS1978(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1662');>	'U4' instance: 'RD_DataIn(CPUSize-1:0)' input bus pin and 'BUS1662(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,2139');>	'U4' instance: 'RD_DataOut(CPUSize-1:0)' output bus pin and 'BUS2121(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1610');>	'U4' instance: 'Reg_DataIn(CPUSize-1:0)' input bus pin and 'BUS1610(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,2019');>	'U4' instance: 'Reg_DataOut(CPUSize-1:0)' output bus pin and 'BUS2019(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1831');>	'U6' instance: 'MemCLRaddressIn(CPUSize-1:0)' input bus pin and 'BUS1831(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1902');>	'U6' instance: 'MemCLRaddressOut(CPUSize-1:0)' output bus pin and 'BUS1902(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1742');>	'U6' instance: 'ReadIn1(CPUSize-1:0)' input bus pin and 'BUS1742(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1750');>	'U6' instance: 'ReadIn2(CPUSize-1:0)' input bus pin and 'BUS1750(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1732');>	'U6' instance: 'ReadOut1(CPUSize-1:0)' output bus pin and 'BUS1732(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1688');>	'U6' instance: 'ReadOut2(CPUSize-1:0)' output bus pin and 'NET1425(15:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1794');>	'U6' instance: 'ShiftedDataIn(CPUSize-1:0)' input bus pin and 'BUS1792(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1696');>	'U6' instance: 'ShiftedDataOut(CPUSize-1:0)' output bus pin and 'BUS1696(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1805');>	'U6' instance: 'SigneExtendedAddressIn(CPUSize-1:0)' input bus pin and 'BUS1805(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,1429');>	'U6' instance: 'SigneExtendedAddressOut(CPUSize-1:0)' output bus pin and 'NET1429(15:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1959,2023');>	'U7' instance: 'AluOut(CPUSize-1:0)' input bus pin and 'BUS2023(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1959,1978');>	'U7' instance: 'CLRaddressIn(CPUSize-1:0)' input bus pin and 'BUS1978(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1959,2037');>	'U7' instance: 'MemReadData(CPUSize-1:0)' output bus pin and 'BUS2037(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1959,2019');>	'U7' instance: 'RegData(CPUSize-1:0)' input bus pin and 'BUS2019(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2023');>	'U9' instance: 'AluOutIn(CPUSize-1:0)' input bus pin and 'BUS2023(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2101');>	'U9' instance: 'AluOutOut(CPUSize-1:0)' output bus pin and 'BUS2101(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2037');>	'U9' instance: 'MemoutIn(CPUSize-1:0)' input bus pin and 'BUS2037(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2109');>	'U9' instance: 'MemoutOut(CPUSize-1:0)' output bus pin and 'BUS2109(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2139');>	'U9' instance: 'RD_Data_In(CPUSize-1:0)' input bus pin and 'BUS2121(7:0)' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2140');>	'U9' instance: 'RD_Data_Out(CPUSize-1:0)' output bus pin and 'BUS2121(7:0)' bus signal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets connected to multiple sources
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1333,1334');>	'BUS1247' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1793,1794');>	'BUS1792' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2139,2140');>	'BUS2121' bus signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1511,1512');>	'NET1507' wire signal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets without source
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1662');>	'BUS1662' bus signal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets without load
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=3');>	'rst' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Unconnected terminals
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=3');>	'rst' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Unconnected symbol input pins
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1416');>	In instance 'U1': 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2478');>	In instance 'U10': 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2092');>	In instance 'U11': 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790');>	In instance 'U12': 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=611');>	In instance 'U3': 'IF_ID_Write'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1597');>	In instance 'U4': 'EX_MEM_Write', 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=691,691');>	In instance 'U6': 'ID_EX_Write', 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1959');>	In instance 'U7': 'rst'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2032,2032');>	In instance 'U9': 'MEM_WB_Write', 'rst'</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Unconnected symbol output pins
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=2790');>	In instance 'U12': 'BranchOut'</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/insidePipeline.bde','','-errorid=1597,1597');>	In instance 'U4': 'RDregisterOut', 'RsregisterOut'</a></li></ul></SPAN><BR>
+<SPAN class=Warn1>insidePipeline.bde - 0 error(s), 76 warning(s)</SPAN><BR>
+<SPAN class=Info1>DRC process completed in 6 second(s).</SPAN><BR>
+</tt>
+       
+        >
+</BODY>
+</HTML>

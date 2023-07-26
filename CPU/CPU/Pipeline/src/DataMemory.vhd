@@ -1,0 +1,68 @@
+--library IEEE;
+--use IEEE.STD_LOGIC_1164.ALL;
+--use IEEE.NUMERIC_STD;
+--use IEEE.STD_LOGIC_UNSIGNED.ALL;
+--use IEEE.NUMERIC_STD.ALL ; 	
+--use ieee.math_real.uniform;
+--use work.p_avg.All ; 
+--
+--entity DataMemory is
+--	port (	 
+--	clk,reset : in std_logic ; 
+--	MemWrite,MemRead : in bit ; 
+--	Address : in std_logic_vector(11 downto 0 ) ; 
+--	WriteData : in std_logic_vector(15 downto 0);
+--	InitData : in Mem_Array ; -- comes from File 
+--	ReadData : out std_logic_vector(15 downto 0) 
+--		);
+--end DataMemory;	  
+--
+--architecture Behavioral of DataMemory is		  
+--	-- whole DMEMORY is an array of 3kB ; each row is 1B and we have 4k rows ; 
+--	--type Mem_Array is array (3000 downto 0) of std_logic_vector(7 downto 0);
+--	signal DMEMORY : Mem_Array := InitData ;  
+--begin	
+--	process (clk)
+--	variable index : integer ; 
+--	variable Hi_Data_out : std_logic_vector(7 downto 0) ;   
+--	variable Low_Data_out : std_logic_vector(7 downto 0) ;  
+--	begin  	
+--		index := to_integer(unsigned(Address));	
+--		if rising_edge(clk) then 
+--			if( reset = '0' ) then
+--				-- read from DMEMORY 
+--			    if( MemWrite = '0' and MemRead = '1' ) then 
+--			   		Low_Data_out := DMEMORY(index) ; 
+--					Hi_Data_out :=  DMEMORY(index+1) ; 
+--					ReadData(15 downto 0)<= Hi_Data_out & Low_Data_out ; 
+--			   	end if ; 	 
+--			   	-- write into DMEMORY  
+--				if(MemWrite = '0' and MemRead = '1' ) then 	  
+--					-- write data in DMEMORY 
+--					DMEMORY(index) <= WriteData(7 downto 0 ) ;  
+--					DMEMORY(index+1) <= WriteData(15 downto 8 ) ; 
+--				end if ; 
+--			else 
+--				-- clear DMEMORY ?? 	if reset signal == 1 
+--				--DMEMORY(3999 downto 1000 )(7 downto 0 ) <= (others => (others => '0'));   
+--				DMEMORY(2999 downto 0) <= (others => (others => '0' )) ; 
+--			end if ; 
+--		end if ;
+--	
+--	end process;	
+--	
+--end Behavioral;
+--
+--
+	--DMem : entity work.DataMemory	
+--	port map (  
+--		clk => clk , 
+--		reset=> rst ,  
+--		MemWrite => MemWrie , 
+--		MemRead => MemRead , 
+--		Address => InputMemAddress,
+--		WriteData => InputMemData , 
+--		ReadData => OutMemData  ,
+--		InitData : in Mem_Array  -- comes from File   chikaresh konam 
+--	) ; 
+	

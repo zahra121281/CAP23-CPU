@@ -1,0 +1,5 @@
+MESSAGE "File: F:/uni/CA/project/CPU (3)/CPU/Pipeline/src/TestBench/pipeline_TB.vhd" 
+MESSAGE "Compile Entity "pipeline_v1_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "pipeline_v1_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_pipeline"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]" 

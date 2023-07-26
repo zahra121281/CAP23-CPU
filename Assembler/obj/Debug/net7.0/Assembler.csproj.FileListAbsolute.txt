@@ -1,0 +1,15 @@
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\bin\Debug\net7.0\Assembler.exe
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\bin\Debug\net7.0\Assembler.deps.json
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\bin\Debug\net7.0\Assembler.runtimeconfig.json
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\bin\Debug\net7.0\Assembler.dll
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\bin\Debug\net7.0\Assembler.pdb
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.dll
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\refint\Assembler.dll
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.pdb
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\Assembler.genruntimeconfig.cache
+C:\Users\ASUS\OneDrive\Desktop\CA\Assembler\obj\Debug\net7.0\ref\Assembler.dll

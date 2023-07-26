@@ -1,0 +1,130 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Pipeline
+[Library]
+Pipeline=.\Pipeline\Pipeline.lib
+[$LibMap$]
+Pipeline=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\shakiba\Downloads
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+[Groups]
+TestBench=1
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2008Key=0
+EnableVHDL2019Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=1
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
+[Files]
+/RegisterFile.vhd=-1
+/SignExtend.vhd=-1
+/ShiftLeft.vhd=-1
+/PCAdder.vhd=-1
+/badPipeline.vhd=-1
+/Controller.vhd=-1
+/My_Types.vhd=-1
+/FileReader.vhd=-1
+/DataMemory.vhd=-1
+/IF_ID_REG.vhd=-1
+/ID_EX_Reg.vhd=-1
+/InstructionMemory.vhd=-1
+/ALU.vhd=-1
+/EX_MEM_REG.vhd=-1
+/DecoderUnit.vhd=-1
+/ExecuteUnit.vhd=-1
+/BaseAdressReg.vhd=-1
+/MemoryUnit.vhd=-1
+/WriteBackUnit.vhd=-1
+/16bitAdder.vhd=-1
+/StatusRegister.vhd=-1
+/Mem_WB_reg.vhd=-1
+/PC_register.vhd=-1
+/mux2-1.vhd=-1
+/InstructionFetchUnit.vhd=-1
+/ID_EX_reg.bde=-1
+/IF_ID_Register.bde=-1
+/pipeline_v1.vhd=-1
+/Pipeline.bde=-1
+/insidePipeline.bde=-1
+/..\compile\insidePipeline1.vhd=-1
+/insidePipeline_v1.vhd=-1
+TestBench/adder_16bit_TB.vhd=-1
+TestBench/adder_16bit_TB_runtest.do=-1
+TestBench/memoryunit_TB.vhd=-1
+TestBench/memoryunit_TB_runtest.do=-1
+TestBench/pipeline_TB.vhd=-1
+TestBench/pipeline_TB.vhd=-1
+TestBench/pipeline_TB.vhd=-1
+[Files.Data]
+.\src\RegisterFile.vhd=VHDL Source Code
+.\src\SignExtend.vhd=VHDL Source Code
+.\src\ShiftLeft.vhd=VHDL Source Code
+.\src\PCAdder.vhd=VHDL Source Code
+.\src\badPipeline.vhd=VHDL Source Code
+.\src\Controller.vhd=VHDL Source Code
+.\src\My_Types.vhd=VHDL Source Code
+.\src\FileReader.vhd=VHDL Source Code
+.\src\DataMemory.vhd=VHDL Source Code
+.\src\IF_ID_REG.vhd=VHDL Source Code
+.\src\ID_EX_Reg.vhd=VHDL Source Code
+.\src\InstructionMemory.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\EX_MEM_REG.vhd=VHDL Source Code
+.\src\DecoderUnit.vhd=VHDL Source Code
+.\src\ExecuteUnit.vhd=VHDL Source Code
+.\src\BaseAdressReg.vhd=VHDL Source Code
+.\src\MemoryUnit.vhd=VHDL Source Code
+.\src\WriteBackUnit.vhd=VHDL Source Code
+.\src\16bitAdder.vhd=VHDL Source Code
+.\src\StatusRegister.vhd=VHDL Source Code
+.\src\Mem_WB_reg.vhd=VHDL Source Code
+.\src\PC_register.vhd=VHDL Source Code
+.\src\mux2-1.vhd=VHDL Source Code
+.\src\InstructionFetchUnit.vhd=VHDL Source Code
+.\src\ID_EX_reg.bde=Block Diagram
+.\src\IF_ID_Register.bde=Block Diagram
+.\src\pipeline_v1.vhd=VHDL Source Code
+.\src\Pipeline.bde=Block Diagram
+.\src\insidePipeline.bde=Block Diagram
+.\compile\insidePipeline1.vhd=VHDL Source Code
+.\src\insidePipeline_v1.vhd=VHDL Source Code
+.\src\TestBench\adder_16bit_TB.vhd=VHDL Test Bench
+.\src\TestBench\adder_16bit_TB_runtest.do=Macro
+.\src\TestBench\memoryunit_TB.vhd=VHDL Test Bench
+.\src\TestBench\memoryunit_TB_runtest.do=Macro
+.\src\TestBench\pipeline_TB.vhd=VHDL Source Code
+.\src\TestBench\pipeline_TB.vhd=VHDL Source Code
+.\src\TestBench\pipeline_TB.vhd=VHDL Source Code
+[file_out:/ID_EX_reg.bde]
+/..\compile\ID_EX_reg.vhd=-1
+[file_out:/IF_ID_Register.bde]
+/..\compile\IF_ID_Register.vhd=-1
+[file_out:/Pipeline.bde]
+/..\compile\Pipeline.vhd=-1
+[file_out:/insidePipeline.bde]
+/..\compile\insidePipeline.vhd=-1

@@ -1,0 +1,39 @@
+Active-HDL 13.0.375.8320 2023-07-10 08:38:28
+
+Elaboration top modules:
+Architecture                  TB_ARCHITECTURE(pipeline_v1_tb)
+
+
+-----------------------------------------------------------------------------------------------------
+Entity         | Architecture    | Library  | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+pipeline_v1_tb | TB_ARCHITECTURE | pipeline |      | 13.0.375.8320 (Windows64) | -dbg
+File_Reader    | Behavioral      | pipeline |      | 13.0.375.8320 (Windows64) | -dbg
+Pipeline       | Pipeline_Arc    | pipeline |      | 13.0.375.8320 (Windows64) | -dbg
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+VHDL Package                     | Library  | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+standard                         | std      |      |                           | <unavailable>
+TEXTIO                           | std      |      | 13.0.375.8320 (Windows64) |  -2019
+std_logic_1164                   | ieee     |      | 13.0.375.8320 (Windows64) |  -2008
+p_avg                            | pipeline |      | 13.0.375.8320 (Windows64) | -dbg
+MATH_REAL                        | ieee     |      | 13.0.375.8320 (Windows64) | <unavailable>
+NUMERIC_STD                      | ieee     |      | 13.0.375.8320 (Windows64) |  -2008
+STD_LOGIC_TEXTIO                 | ieee     |      | 13.0.375.8320 (Windows64) | <unavailable>
+std_logic_arith                  | ieee     |      | 13.0.375.8320 (Windows64) | <unavailable>
+STD_LOGIC_UNSIGNED               | ieee     |      | 13.0.375.8320 (Windows64) | <unavailable>
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+Library                          | Comment
+-----------------------------------------------------------------------------------------------------
+ieee                             | Standard IEEE packages library
+pipeline                         | None
+std                              | Standard VHDL library
+-----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+pipeline_v1_tb pipeline_v1_tb TB_ARCHITECTURE
+
